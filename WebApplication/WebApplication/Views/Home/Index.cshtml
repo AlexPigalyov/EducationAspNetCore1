@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    @foreach(UserModel user in Model)
+    {
+        <div>Id: @user.Id</div>
+        <div>Name: @user.Name</div>
+        <div>Balance: @user.Balance</div>
+        <div>Creation date: @user.Created</div>
+    }
+</div>
